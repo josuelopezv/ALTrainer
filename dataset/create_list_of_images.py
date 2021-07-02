@@ -1,6 +1,6 @@
 import glob
 
-imglist = glob.glob("img/*.png", recursive=False)
+imglist = glob.glob("img/**/*.png", recursive=True)
 
 with open("data/train.txt", 'w', encoding = 'utf-8') as f:
 	for img in imglist:
